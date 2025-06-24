@@ -213,7 +213,6 @@ header {
 }
 
 .odds-btn {
-  border:2px solid #48bb78;
   color: white;
   border: none;
   border-radius: 8px;
@@ -221,6 +220,8 @@ header {
   font-weight: 600;
   width: 100px;
   transition: background-color 0.2s;
+  border: 1px solid #48bb78;
+
 }
 
 
