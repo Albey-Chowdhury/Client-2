@@ -151,7 +151,7 @@ header {
     list-style: none;
 }
 
-.main-nav li button {
+.main-menu button {
     padding: 5px 12px;
     text-transform: capitalize;
     white-space: nowrap;
@@ -162,7 +162,7 @@ header {
     cursor: pointer;
 }
 
-.main-nav li button:hover {
+.main-menu button:hover {
     color: var(--secondary-a);
 }
 
