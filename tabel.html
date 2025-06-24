@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Match Stats</title>
+    link
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tailwind CSS (for additional utility classes and responsiveness) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="d-flex justify-content-center align-items-start min-vh-100">
+    <div class="container my-4">
+        <!-- Navigation Tabs -->
+        <ul class="nav nav-tabs rounded-t-lg" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active rounded-tl-lg" id="main-tab" data-bs-toggle="tab" data-bs-target="#main" type="button" role="tab" aria-controls="main" aria-selected="true">Main</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link rounded-tr-lg" id="stats-tab" data-bs-toggle="tab" data-bs-target="#stats" type="button" role="tab" aria-controls="stats" aria-selected="false">Stats</button>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="main" role="tabpanel" aria-labelledby="main-tab">
+                <!-- Result Section -->
+                <div class="section-header rounded-t-none">Result</div>
+                <div class="section-content">
+                    <div class="section-item">
+                        <span class="label">England A (Women)</span>
+                        <span class="value-box">1.07</span>
+                    </div>
+                    <div class="section-item">
+                        <span class="label">Draw</span>
+                        <span class="value-box secondary">50</span>
+                    </div>
+                    <div class="section-item rounded-b-lg">
+                        <span class="label">New Zealand A (Women)</span>
+                        <span class="value-box">6.37</span>
+                    </div>
+                </div>
+
+                <!-- Draw Section -->
+                <div class="section-header rounded-t-lg mt-4">Draw</div>
+                <div class="section-content">
+                    <div class="section-item rounded-b-lg">
+                        <span class="label">Yes</span>
+                        <span class="value-box-group">
+                            <span class="value-box secondary">50</span>
+                            <span class="value-box green">1.003</span>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- England A (Women) Total Section -->
+                <div class="section-header rounded-t-lg mt-4">England A (Women) Total</div>
+                <div class="section-content">
+                    <div class="section-item rounded-b-lg">
+                        <span class="label">Over 291.5</span>
+                        <span class="value-box">1.83</span>
+                        <span class="label text-end ms-3">Under 291.5</span>
+                        <span class="value-box ms-auto">1.83</span>
+                    </div>
+                </div>
+
+                <!-- New Zealand A (Women) Total Section -->
+                <div class="section-header rounded-t-lg mt-4">New Zealand A (Women) Total</div>
+                <div class="section-content">
+                    <div class="section-item rounded-b-lg">
+                        <span class="label">Over 211.5</span>
+                        <span class="value-box">1.775</span>
+                        <span class="label text-end ms-3">Under 211.5</span>
+                        <span class="value-box ms-auto">1.888</span>
+                    </div>
+                </div>
+
+                <!-- Result 2-Way Section -->
+                <div class="section-header rounded-t-lg mt-4">Result 2-Way</div>
+                <div class="section-content">
+                    <div class="section-item rounded-b-lg">
+                        <span class="label">England A (Women)</span>
+                        <span class="value-box">1.07</span>
+                        <span class="label text-end ms-3">New Zealand A (Women)</span>
+                        <span class="value-box ms-auto">6.32</span>
+                    </div>
+                </div>
+
+                <!-- Total Runs Per Delivery Section -->
+                <div class="section-header rounded-t-lg mt-4">Total Runs Per Delivery</div>
+                <div class="section-content">
+                    <div class="total-runs-item">
+                        <div class="row-content">
+                            <span>England A (Women) 42 Overs, 3 Delivery - Over 0.5</span>
+                            <span class="value-box-small">1.355</span>
+                        </div>
+                        <div class="row-content">
+                            <span>England A (Women) 42 Overs, 3 Delivery - Under 0.5</span>
+                            <span class="value-box-small">2.815</span>
+                        </div>
+                    </div>
+                    <div class="total-runs-item">
+                        <div class="row-content">
+                            <span>England A (Women) 42 Overs, 3 Delivery - Over 1.5</span>
+                            <span class="value-box-small">3.54</span>
+                        </div>
+                        <div class="row-content">
+                            <span>England A (Women) 42 Overs, 3 Delivery - Under 1.5</span>
+                            <span class="value-box-small">1.232</span>
+                        </div>
+                    </div>
+                    <div class="total-runs-item rounded-b-lg">
+                        <div class="row-content">
+                            <span>England A (Women) 42 Overs, 3 Delivery - Over 2.5</span>
+                            <span class="value-box-small">6.89</span>
+                        </div>
+                        <div class="row-content">
+                            <span>England A (Women) 42 Overs, 3 Delivery - Under 2.5</span>
+                            <span class="value-box-small">1.056</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Input Box at the bottom -->
+                <div class="d-flex justify-content-center align-items-center mt-4 mb-3">
+                    <div class="input-box">0</div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="stats" role="tabpanel" aria-labelledby="stats-tab">
+                <div class="p-3 text-center text-secondary">
+                    Stats content would go here.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (Popper.js and Bootstrap JS) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
